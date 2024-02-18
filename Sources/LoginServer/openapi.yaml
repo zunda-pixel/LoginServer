@@ -1,0 +1,18 @@
+openapi: '3.1.0'
+info:
+  title: LoginService
+  version: 1.0.0
+servers:
+  - url: https://example.com/
+    description: Example service deployment.
+paths:
+  /login:
+    get:
+      operationId: login
+      responses:
+        '303':
+          description: A success response Login
+          headers:
+            location:
+              schema:
+                type: string
